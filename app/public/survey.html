@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    .dropdown .form-control {
+        width: 30%;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Profile</h1>
+            <h3>Tell us about you!</h3>
+            <hr>
+            <a href="/">
+                <button class="btn btn-danger btn-lg">
+                    <span class="fa fa-eye"></span> Go back to Home</button>
+            </a>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Profile Information</strong>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="role">Picture URL</label>
+                                <input type="text" class="form-control" id="photo">
+                            </div>
+                            <div class="dropdown">
+                                <div class="form-group">
+                                    <label for="q1">I am always brutally honest when my friend gets a bad haircut</label>
+                                    <select class="form-control" id="q1">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">Strongly Disagree, the worse the haircut, the better I say it is.</option>
+                                        <option value="2">Disagree, I can't handle an awkward confrontation about haircuts</option>
+                                        <option value="3">Neutral, depends on whether they've annoyed me that day and whether I want to hurt their feelings.</option>
+                                        <option vaue="4">Agree, honesty is great until it interferes with my personal agenda</option>
+                                        <option vaue="5">Strongly Agree, I have lost friends over this</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="q2">Are you a cat or dog person?</label>
+                                    <select class="form-control" id="q2">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">I hate animals, there is something wrong with me</option>
+                                        <option value="2">Crazy Cat Lady/Gentleman</option>
+                                        <option value="3">Catz rule</option>
+                                        <option vaue="4">Love doggos</option>
+                                        <option vaue="5">I would house a wolfpack full of every dog breed</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="q3">How do you feel about brunch?</label>
+                                    <select class="form-control" id="q3">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">I get furious when it's early, I'm hungry, and there's a long line between me and food</option>
+                                        <option value="2">I only go because everyone says it's good, but I always secretly die on the inside</option>
+                                        <option value="3">Fine, but I'll just have a dry English muffin and a black coffee like a weirdo</option>
+                                        <option vaue="4">It's incredibly enjoyable, I love choosing between savory and sweet!</option>
+                                        <option vaue="5">I wish I could eat brunch for all my meals, especially dinner!</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="q4">I love cheese</label>
+                                    <select class="form-control" id="q4">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">EW! It comes from milk, which comes from squeezing cow parts</option>
+                                        <option value="2">Disagree</option>
+                                        <option value="3">Woefully apathetic about cheese</option>
+                                        <option vaue="4">Agree</option>
+                                        <option vaue="5">It's not an obsession just one of my major daily priorities</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="q5">What kind of show would you want your perfect friendship to be like?</label>
+                                    <select class="form-control" id="q5">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">I don't trust televisions</option>
+                                        <option value="2">Always Sunny</option>
+                                        <option value="3">The Odd Couple</option>
+                                        <option vaue="4">Friends</option>
+                                        <option vaue="5">How to Get Away with Murder</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="q6">My idea of a perfect hangout</label>
+                                    <select class="form-control" id="q6">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">Couch and TV all day with breaks for ordering pizza and answering the door for pizza (we'll take turns getting up)</option>
+                                        <option value="2">Go out for food and drinks and discuss things we like and maybe play a trivia game at a bar</option>
+                                        <option value="3">Go to yoga and meditate, then go home and meditate, then eat vegan mediterannean food</option>
+                                        <option vaue="4">Work out together, spot each other, drink broteins, and take each other's instagram pictures</option>
+                                        <option vaue="5">Go camping in the secluded woods with only a rope, space blanket, and a paperclip</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="q7">Oh no what have I done</label>
+                                    <select class="form-control" id="q7">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option vaue="4">4</option>
+                                        <option vaue="5">Spent way too much time typing out questions and answers</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="q8">It's almost 2 a.m. what are you doing?</label>
+                                    <select class="form-control" id="q8">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">Finishing up homework but wasting time on insignificant filler text</option>
+                                        <option vaue="4">4</option>
+                                        <option vaue="5">I hope this app works!</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="q9">Go to sleep</label>
+                                    <select class="form-control" id="q9">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">Ok</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option vaue="4">4</option>
+                                        <option vaue="5">5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="q10">Chocolate chip cookies are far superior to oatmeal raisin:</label>
+                                    <select class="form-control" id="q10">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="1">Strongly Disagree</option>
+                                        <option value="2">Disagree</option>
+                                        <option value="3">Neutral</option>
+                                        <option vaue="4">Agree</option>
+                                        <option vaue="5">Strongly Disagree</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary btn-md" id="submit-btn">
+                                <span class="fa fa-fire"></span>Find Your New Best Friend!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="results-modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h2 class="modal-title">
+                                    <strong>Destiny has brought you two together!</strong>
+                                </h2>
+                            </div>
+                            <div class="modal-body">
+                                <h2 id="match-name"></h2>
+                                <img id="match-img" src="" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // create new friend to submit
+        $("#submit-btn").on("click", function (event) {
+            event.preventDefault();
+            var newProfile = {
+                name: $("#name").val().trim(),
+                photo: $('#photo').val().trim(),
+                scores: [
+                    parseInt($('#q1').val()),
+                    parseInt($('#q2').val()),
+                    parseInt($('#q3').val()),
+                    parseInt($('#q4').val()),
+                    parseInt($('#q5').val()),
+                    parseInt($('#q6').val()),
+                    parseInt($('#q7').val()),
+                    parseInt($('#q8').val()),
+                    parseInt($('#q9').val()),
+                    parseInt($('#q10').val())
+                ]
+            };
+            // send new profile to api and gets back the resulting best match!
+            $.post("/api/friends", newProfile, function (bestMatch) {
+                $('#match-name').html(bestMatch.name);
+                $('#match-img').attr("src", bestMatch.photo);
+                $('#results-modal').modal('show');
+                console.log(bestMatch);
+            });
+            
+        });
+    </script>
+
+</body>
+
+</html>
